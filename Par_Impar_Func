@@ -1,0 +1,20 @@
+/*Exemplo 2: Função para Verificar Par ou Ímpar: Uma função que verifica
+se um número é par ou ímpar.*/
+
+#include <stdio.h>
+ void verificaParImpar(int num);
+ 
+ int main() {
+  int numero;
+  printf("Digite um número: ");
+  scanf("%d", &numero);
+  verificaParImpar(numero);
+  return 0;
+ }
+ void verificaParImpar(int num) {
+  if (num % 2 == 0) {
+   printf("%d é par.\n", num);
+  } else {
+   printf("%d é ímpar.\n", num);
+ }
+}
