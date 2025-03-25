@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+// Assinatura da função que verifica se o número é par ou ímpar
+void verificaParOuImpar(int numero);
+
+int main() {
+    int numero;
+    
+    // Lê o número inteiro do usuário
+    printf("Digite um número inteiro: ");
+    scanf("%d", &numero);
+    
+    // Chama a função para verificar se o número é par ou ímpar
+    verificaParOuImpar(numero);
+    
+    return 0;
+}
+
+// Definição da função que verifica se o número é par ou ímpar
+void verificaParOuImpar(int numero) {
+    if (numero % 2 == 0) {
+        printf("O número %d é PAR.\n", numero);
+    } else {
+        printf("O número %d é ÍMPAR.\n", numero);
+    }
+}
